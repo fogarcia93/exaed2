@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>ID:</strong>
+  <%= @gestione.user_id %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @gestione.nombre %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @gestione.correo %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @gestione.telefono %>
+</p>
+
+<p>
+  <strong>Departamento:</strong>
+  <%= @gestione.departamento %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @gestione.descripcion %>
+</p>
+
+<p>
+  <strong>My file:</strong>
+  <%= @gestione.my_file %>
+</p>
+
+
+<div class="row">
+  <div class="col s12">
+    <%= link_to 'Editar',  edit_gestione_path(@gestione), class: 'waves-effect waves-light btn', style: 'color: white' %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12">
+    <%= link_to 'Atras', gestiones_path, class: 'waves-effect waves-light btn', style: 'color: white' %>
+  </div>
+</div>

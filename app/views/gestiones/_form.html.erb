@@ -1,0 +1,58 @@
+<%= form_for(gestione) do |f| %>
+  <% if gestione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gestione.errors.count, "error") %> prohibited this gestione from being saved:</h2>
+
+      <ul>
+      <% gestione.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :correo %>
+    <%= f.text_field :correo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono %>
+    <%= f.text_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= f.label :departamento %>
+    <%= f.text_field :departamento %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_area :descripcion %>
+  </div>
+
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>Archivo</span>
+        <%= f.file_field :my_file %>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+    </div>
+
+<div class="actions">
+    <%= f.submit "Guardar",class: 'waves-effect waves-ligt btn' %>
+  </div>
+<% end %>
+
