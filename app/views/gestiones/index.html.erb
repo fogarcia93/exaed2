@@ -5,7 +5,7 @@
 <table class="highlight">
   <thead>
     <tr>
-      <th>ID</th>
+      <th>IDUser</th>
       <th>Nombre</th>
       <th>Correo</th>
       <th>Telefono</th>
@@ -28,6 +28,7 @@
         <td><%= gestione.departamento %></td>
         <td><%= gestione.descripcion %></td>
         <td><a href="<%= gestione.my_file %>">Descargar</a></td>
+        <td><a href=http://localhost:3000/rails/mailers/example_mailer/sample_mail_preview.html <a class="waves-effect waves-light btn">Correo ></a></td>
         <td><a href= "/gestiones/<%= gestione.id%>"<a class="waves-effect waves-light btn">Mostrar</a></td>
         <td><a href= "/gestiones/<%= gestione.id%>/edit" class="waves-effect waves-light btn">Editar</a></td>
         <td>
